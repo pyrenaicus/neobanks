@@ -1,9 +1,7 @@
-import { useState } from "react";
+import { useTime } from "../../hooks/useTime";
 const Time = () => {
-  const date = new Date();
-  const [time, setTime] = useState(
-    date.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })
-  );
+  // custom hook to retrieve current time
+  const time = useTime();
   return <div className="phone-status-time">{time}</div>;
 };
 

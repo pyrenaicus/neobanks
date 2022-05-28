@@ -5,7 +5,10 @@ import TransactionsGraphic from "./TransactionsGraphic";
 const MainSection = () => {
   return (
     <section>
-      <SectionHeader />
+      <SectionHeader
+        headline="Transactions history"
+        subhead="These are your monthly and daily actions. 📊"
+      />
       <TransactionsInfo />
       <TransactionsGraphic />
     </section>

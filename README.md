@@ -64,3 +64,7 @@ To build the app I followed an **Atomic design** methodology. Using this approac
 │       ├── TransactionsGraphic.tsx
 │       └── TransactionsInfo.tsx
 ```
+
+Roughly the app is composed by a series of components, a `PhoneStatus` on top showing on one side current time, and on the other a series of phone vitals, `Time` and `PhoneVitals`components. Below `PhoneStatus` is an `AppHeader`component, and in the bottom we find the `MenuBar` component. In between them is the `MainSection` component, it holds what we could say all the data-driven components of the app. Right now is just a mockup, passing hardcoded data by `props` to the components. A `SectionHeader` component showing a headline and a subheadline. Below it a `TransactionsInfo`component, holding two `InfoBox` components. And right below it, the largest component, a line chart built with **Recharts** and showing a view of transactions over time, with tabbed views.
+
+![dummy box](https://res.cloudinary.com/do6vrwdse/image/upload/v1653763446/caixabank/20220528_204043_gonupv.jpg)

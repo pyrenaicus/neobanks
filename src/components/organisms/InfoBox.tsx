@@ -6,7 +6,7 @@ export type InfoboxType = {
 
 const InfoBox = (props: InfoboxType) => {
   const { title, content, subtitle } = props;
-
+  // we are passing data by props
   return (
     <div className="info-box">
       <div className="info-box-title">{title}</div>

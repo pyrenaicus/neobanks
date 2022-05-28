@@ -38,6 +38,8 @@ yarn add react-icons
 
 ## Result
 
+You can see a live demo here: [neobank.surge.sh](https://neobank.surge.sh)
+
 ![my result](https://res.cloudinary.com/do6vrwdse/image/upload/v1653760388/caixabank/Screenshot_2022-05-28_at_19.52.35_xzxnlw.png)
 
 To build the app I followed an **Atomic design** methodology. Using this approach allows us to break our components into smaller units that can be developed and tested in isolation, and it helps to keep our directories in order as things scale up.
@@ -65,6 +67,34 @@ To build the app I followed an **Atomic design** methodology. Using this approac
 │       └── TransactionsInfo.tsx
 ```
 
-Roughly the app is composed by a series of components, a `PhoneStatus` on top showing on one side current time, and on the other a series of phone vitals, `Time` and `PhoneVitals`components. Below `PhoneStatus` is an `AppHeader`component, and in the bottom we find the `MenuBar` component. In between them is the `MainSection` component, it holds what we could say all the data-driven components of the app. Right now is just a mockup, passing hardcoded data by `props` to the components. A `SectionHeader` component showing a headline and a subheadline. Below it a `TransactionsInfo`component, holding two `InfoBox` components. And right below it, the largest component, a line chart built with **Recharts** and showing a view of transactions over time, with tabbed views.
+Roughly, the app is composed by a series of components, a `PhoneStatus` on top showing on one side current time, and on the other a series of phone vitals, `Time` and `PhoneVitals` components.
+
+Below `PhoneStatus` is an `AppHeader`component, and in the bottom we find the `MenuBar` component.
+
+In between them we find the `MainSection` component, it holds what we could say all the data-driven components of the app.
+
+Right now is a mockup, and we are passing hardcoded data by `props` to the components.
+
+A `SectionHeader` component showing a headline and a subheadline.
+
+Below it a `TransactionsInfo` component, holding two `InfoBox` components.
+
+And right below it, `TransactionsGraphic`, the largest component, holding a line chart built with **Recharts** and showing a view of transactions over time, with tabbed views.
 
 ![dummy box](https://res.cloudinary.com/do6vrwdse/image/upload/v1653763446/caixabank/20220528_204043_gonupv.jpg)
+
+## Stack used
+
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [Recharts](https://recharts.org/)
+- [React-icons](https://react-icons.github.io/react-icons/)
+
+## Author
+
+[Pau Guerrero](https://www.linkedin.com/in/pauguerrero/)
+
+## License
+
+This project is licensed under the MIT License
